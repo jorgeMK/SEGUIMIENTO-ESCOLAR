@@ -1,0 +1,12 @@
+c:\users\wifi\documents\visual studio 2015\Projects\INTEGRADORA\INTEGRADORA\bin\Debug\INTEGRADORA.exe.config
+c:\users\wifi\documents\visual studio 2015\Projects\INTEGRADORA\INTEGRADORA\bin\Debug\INTEGRADORA.exe
+c:\users\wifi\documents\visual studio 2015\Projects\INTEGRADORA\INTEGRADORA\bin\Debug\INTEGRADORA.pdb
+c:\users\wifi\documents\visual studio 2015\Projects\INTEGRADORA\INTEGRADORA\obj\Debug\INTEGRADORA.csprojResolveAssemblyReference.cache
+c:\users\wifi\documents\visual studio 2015\Projects\INTEGRADORA\INTEGRADORA\obj\Debug\INTEGRADORA.Form1.resources
+c:\users\wifi\documents\visual studio 2015\Projects\INTEGRADORA\INTEGRADORA\obj\Debug\INTEGRADORA.frmPlanificacionAcademica.resources
+c:\users\wifi\documents\visual studio 2015\Projects\INTEGRADORA\INTEGRADORA\obj\Debug\INTEGRADORA.ImportarExcel.resources
+c:\users\wifi\documents\visual studio 2015\Projects\INTEGRADORA\INTEGRADORA\obj\Debug\INTEGRADORA.PanelGrupos.resources
+c:\users\wifi\documents\visual studio 2015\Projects\INTEGRADORA\INTEGRADORA\obj\Debug\INTEGRADORA.Properties.Resources.resources
+c:\users\wifi\documents\visual studio 2015\Projects\INTEGRADORA\INTEGRADORA\obj\Debug\INTEGRADORA.csproj.GenerateResource.Cache
+c:\users\wifi\documents\visual studio 2015\Projects\INTEGRADORA\INTEGRADORA\obj\Debug\INTEGRADORA.exe
+c:\users\wifi\documents\visual studio 2015\Projects\INTEGRADORA\INTEGRADORA\obj\Debug\INTEGRADORA.pdb
