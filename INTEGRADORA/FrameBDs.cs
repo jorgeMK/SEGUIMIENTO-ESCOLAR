@@ -12,11 +12,6 @@ namespace INTEGRADORA
 {
     public class FrameBDs
     {
-        //string ser;
-        //string por;
-        //string pas;
-        //string use;
-        //string db;
         public static MySqlConnection conex = new MySqlConnection();
 
         public static string servidor;
@@ -24,12 +19,8 @@ namespace INTEGRADORA
         public static string usuario;
         public static string password;
         public static string bd;
-
-
-        //public FrameBD(string servidor, uint puerto, string usuario, string password, string bd)
-        static FrameBDs()
+        public FrameBDs()
         {
-            // TODO: Complete member initialization
             servidor = "localhost";
             puerto = 3309;
             usuario = "root";
@@ -39,18 +30,19 @@ namespace INTEGRADORA
 
             conex.Close();
             MySqlConnectionStringBuilder conexs = new MySqlConnectionStringBuilder();
+            
             conexs.Server = servidor;
-            conexs.Port = puerto;//Convert.ToUInt32(por);
-            conexs.Password = password; //pas;
-            conexs.UserID = usuario; //use;
+            conexs.Port = puerto;
+            conexs.Password = password;
+            conexs.UserID = usuario;
             conexs.Database = bd;
 
-            //MySqlConnection conex = new MySqlConnection(conexs.ToString() );
             conex.ConnectionString = conexs.ConnectionString;
-            //MySqlConnection conn = new MySqlConnection(builder.ToString());
-
 
             conex.Open();
+
+            MySqlCommand comando;
+            comando = new MySqlCommand();
 
         }
 
@@ -61,7 +53,6 @@ namespace INTEGRADORA
 
         }
 
-
         public DataSet SQLSEL(string sql)
         {
             conectar();
@@ -69,13 +60,9 @@ namespace INTEGRADORA
             MySqlDataAdapter Adaptador = new MySqlDataAdapter(sql, conex);
             DataSet RsDatos = new DataSet();
             Adaptador.Fill(RsDatos, "datos");
-            //SQLSEL = RsDatos;
             return (RsDatos);
-            //conex.Close(); 
         }
-
-        //TRABAJA CON COMBOBOX
-
+        
         public DataTable SQLCOMBO(string sql)
         {
             conectar();
@@ -83,35 +70,20 @@ namespace INTEGRADORA
             DataTable DT = new DataTable();
             Adap.Fill(DT);
             return DT;
-
         }
 
-        //Permite ejecutar comandos INSERT, DELETE Y UPDATE
-        // De ahi deriva el IDU
-        public static void SQLIDU(string sql)
+        public void SQLIDU(string sql)
         {
-
             try
             {
-
                 conectar();
                 MySqlCommand comando = new MySqlCommand(sql, conex);
                 comando.ExecuteNonQuery();
-                //conex.Close();
-
-
-
             }
             catch (MySqlException ex)
             {
-
-
                 MessageBox.Show(ex.Message + " " + ex.Number);
-
-
-                //throw;
             }
-
         }
 
         public static MySqlDataReader SQLReader(string sql)
